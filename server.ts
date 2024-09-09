@@ -17,8 +17,8 @@ export function app(): express.Express {
   server.set('view engine', 'html');
   server.set('views', browserDistFolder);
 
-  server.get('/api/my-data', (req, res) => {
-    return [1, 2, 3];
+  server.get('/api/my-data', async function (req, res) {
+    res.status(200).send([1,2,3]);
   });
 
   // Example Express Rest API endpoints

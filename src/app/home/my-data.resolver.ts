@@ -13,7 +13,7 @@ export class MyDataResolver {
 
   resolve(route: ActivatedRouteSnapshot): Observable<number[]> {
     console.warn('getting data');
-    return this.http.get('http://localhost:4000/api/my-data').pipe(
+    return this.http.get('/api/my-data').pipe(
       map((r) => r as number[])
     );
   }

@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // this.myNumbers = this.route.snapshot.data['mydata'] as number[];
+    this.myNumbers = this.route.snapshot.data['mydata'] as number[];
   }
 
 }

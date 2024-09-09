@@ -11,9 +11,9 @@ export const homeRoutes: Routes = [
           {
               path: '',
               component: HomeComponent,
-              // resolve: {
-              //   mydata: MyDataResolver
-              // }
+              resolve: {
+                mydata: MyDataResolver
+              }
           }
       ]
   }
